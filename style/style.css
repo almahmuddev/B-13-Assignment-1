@@ -185,10 +185,15 @@
 }
 
 .boxes div {
-    background-color: aliceblue;
+    background-color: rgb(233, 236, 239);
     padding: 34px 24px;
     border-radius: 8px;
     text-align: center;
+}
+
+.boxes div:hover {
+    background-color: #c9d4dd;
+    transition: 450ms ease-in;
 }
 
 .boxes div img {
@@ -217,39 +222,29 @@
 .brain {
     margin: 3.5rem 0;
     width: 90%;
+    margin: auto;
     display: flex;
     gap: 21px;
 }
 
-.brain img {
-    width: 75%;
-    height: 100%;
-}
-
 .brain-texts {
-    /* font-size: large; */
-    margin: auto;
+    text-align: left;
 }
-
 .brain-texts span {
     font-family: var(--font-family);
     color: var(--button-color);
     font-size: 17px;
     font-weight: 500;
-    text-align: left;
 }
 
 .brain-texts h3 {
     font-family: var(--font-family);
     font-style: Bold;
-    font-size: 44px;
+    font-size: 42px;
     font-weight: 700;
-    line-height: 48px;
-    letter-spacing: 0%;
-    text-align: left;
     text-transform: capitalize;
     color: #001931;
-    margin: 1.7rem 0;
+    margin: .7rem 0;
 }
 
 .brain-texts p {
@@ -258,19 +253,22 @@
 }
 
 .list-items {
-    margin: 0;
+    display: grid;
+    margin-top: -2.3rem;
 }
 
 .icon-list {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 3px;
-    margin: 0;
+    gap: 4px;
+    /* margin-top: 12px; */
+    padding: 0;
 }
 
 .icon-list img {
-    width: 9%;
-    height: 9%;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
 
 .icon-list h6 {
@@ -278,6 +276,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #001931;
+    line-height: 1.4;
 }
 
 /* last section started */
